@@ -1,0 +1,25 @@
+{
+  "name": "mosemiv_server",
+  "version": "1.0.0",
+  "description": "mosemiv",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GodGodixon/Javascript_ServerPractice.git"
+  },
+  "author": "mosemiv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GodGodixon/Javascript_ServerPractice/issues"
+  },
+  "homepage": "https://github.com/GodGodixon/Javascript_ServerPractice#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
