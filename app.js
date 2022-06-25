@@ -4,6 +4,8 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const dotenv = require('dotenv');
 
+const basicRouter = require('./router.js');
+
 const app = express();
 dotenv.config();
 app.set('port', process.env.PORT || '8081');
@@ -29,11 +31,11 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/', (req, res, next) => {
-    console.log('GET 요청에서 실행되는 친구입니다');
-    res.status(200).send("Yeah good");
-})
-
+//app.get('/', (req, res, next) => {
+//    console.log('GET 요청에서 실행되는 친구입니다');
+//    res.status(200).send("Yeah good");
+//})
+app.use('/', basicRouter);
 
 
 app.use((req, res, next) => {
